@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title></title>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- <meta name="robots" content="noindex, nofollow" /> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+</head>
+<body>
+    <div class="wrapper">
+        
+        <main class="main">
+            <section class="main-navbar-tab">
+                <div class="main-navbar-tab__header-mob header-mob">
+                    <div class="header-mob__logo">
+                        <svg class="icon svg main-navbar-tab__icon">
+                            <use xlink:href="#weather-app" />
+                        </svg>
+                        <span class="main-navbar-tab__title">Meteorolog</span>
+                    </div>
+                    <div class="header-mob__menu">
+                        <nav class="navbar navbar-dark">
+                            <div class="container">
+                              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                              </button>
+                            </div>
+                          </nav>
+                          
+                    </div>
+                </div>
+            </section>
+            <div class="container">
+                <div class="main-block">
+                    <div class="main-body">
+                        <section class="main-navbar">
+                            <div class="main-navbar__header navbar-inner">
+                                <div class="main-navbar__logo">
+                                    <svg class="icon svg main-navbar__icon">
+                                        <use xlink:href="#weather-app" />
+                                    </svg>
+                                    <span class="main-navbar__title">Meteorolog</span>
+                                </div>
+                            </div>
+                            <div class="navbar-wrapper">
+                                <div class="main-navbar__menu-block menu-block">
+                                    <ul class="main-navbar__list">
+                                        <li class="menu-navbar__item navbar-inner menu-navbar__item-active">
+                                            <svg class="icon svg-menu main-navbar__icon">
+                                                <use xlink:href="#home" />
+                                            </svg>
+                                            <span class="menu-navbar__title">Dashbord</span>
+                                        </li>
+                                        <li class="menu-navbar__item navbar-inner ">
+                                            <svg class="icon svg-menu main-navbar__icon">
+                                                <use xlink:href="#calendar-with-spring-binder-and-date-blocks" />
+                                            </svg>
+                                            <span class="menu-navbar__title">Calendar</span>
+                                        </li>
+                                        <li class="menu-navbar__item navbar-inner ">
+                                            <svg class="icon svg-menu main-navbar__icon">
+                                                <use xlink:href="#statistics" />
+                                            </svg>
+                                            <span class="menu-navbar__title">Statistic</span>
+                                        </li>
+                                        <li class="menu-navbar__item navbar-inner ">
+                                            <svg class="icon svg-menu main-navbar__icon">
+                                                <use xlink:href="#settings" />
+                                            </svg>
+                                            <span class="menu-navbar__title">Setting</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="main-navbar__footer footer-block navbar-inner">
+                                    <div class="footer-block__weather">
+                                        <div class="footer-block__inner">
+                                            <div class="weather-inner">
+                                                <div class="footer-block__icon">
+                                                    <svg class="icon svg-icon">
+                                                        <use xlink:href="#weather-app" />
+                                                    </svg>
+                                                </div>
+                                                <div class="footer-block__title weather-info">                            
+                                                    <span class="weather-info__day">Сегодня</span>
+                                                    <span class="weather-info__time">11:44</span>
+                                                    <small class="weather-info__data">Вс, 13 декабря</small>
+                                                </div>
+                                            </div>
+                                            <div class="footer-block__temp">+14°C</div>
+                                            <div class="footer-block__city">
+                                                <span>Moscow</span>
+                                                Russia
+                                            </div>
+                                            <div class="footer-block__temp-info">
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <div>
+                                        <button class="footer-block__login">
+                                            <svg class="icon svg-menu main-navbar__icon">
+                                                <use xlink:href="#logout" />
+                                            </svg>
+                                            <span class="footer-block__title">Log out</span>
+                                        </button>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </section>
+                        <section class="main-weather">
+                            <div class="main-weather__header weather-header"> 
+                                <div class="weather-header__search navbar-inner">
+                                    <form class="weather-header__form">
+                                        <button class="weather-header__btn">
+                                            <svg class="icon svg-search">
+                                                <use xlink:href="#search"/>
+                                            </svg>
+                                        </button>
+                                        <input type="text" class="weather-header__input" placeholder="City">
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="main-weather__content weather-content navbar-inner"">
+                                <div class="weather-content__title"></div>
+                                <div class="weather-content__city city-block">
+                                    <div class="city-block__inner">
+                                        <div class="city-block__list">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="weather-content__title">Weather Graph</div>
+                                <div class="weather-content__graph graph-block">
+                                    <div class="graph-block__inner" style="height: 300px;">
+                                        <canvas   canvas id="myChart" height="30vh" width="80vw"></canvas>
+                                    </div>
+                                </div>   
+                            </div>
+                        </section>
+                        <!-- <div class="wrapper" style="width: 600px; margin: 0 auto">
+                            <canvas   canvas id="myChart" width="200" height="200"></canvas>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-body">
+                    
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="weather-app" viewBox="0 0 497 497"><title>weather-app</title><path d="m162.994 0v270c74.558 0 135-60.441 135-135s-60.442-135-135-135z" fill="#ffbc2b"/><path d="m267.994 135c0-74.559-47.01-135-105-135-74.558 0-135 60.441-135 135s60.442 135 135 135c57.99 0 105-60.441 105-135z" fill="#ffcf66"/><path d="m0 308.5c0 49.706 40.294 90 90 90h317c49.706 0 90-40.294 90-90z" fill="#bdf2ff"/><path d="m90 368.5h317c49.706 0 90-26.863 90-60 0-39.513-25.465-73.077-60.878-85.181-4.837-28.285-29.457-49.819-59.122-49.819-2.478 0-4.916.168-7.315.46-22.003-44.698-67.998-75.46-121.185-75.46s-99.182 30.762-121.185 75.46c-2.399-.292-4.837-.46-7.315-.46-29.665 0-54.285 21.534-59.122 49.819-35.413 12.104-60.878 45.668-60.878 85.181 0 33.137 40.294 60 90 60z" fill="#e5faff"/><path d="m407.447 299.023c.003 0-22.362-34.438-37.763-58.153-.001.001-.001 127.63-.001 127.63 24.853 0 45-20.147 45-45 0-9.027-2.66-17.432-7.236-24.477z" fill="#28a6fa"/><path d="m384.683 323.5c0-9.027-.887-17.432-2.412-24.477.001 0-7.454-34.438-12.587-58.152-15.403 23.715-37.768 58.152-37.768 58.152-4.573 7.045-7.233 15.45-7.233 24.477 0 24.853 20.147 45 45 45 8.284 0 15-20.147 15-45z" fill="#24c0ff"/><path d="m139.183 398.5c0 16.569 13.431 30 30 30s30-13.431 30-30c0-6.018-1.773-11.621-4.824-16.318.002 0-14.908-22.959-25.175-38.769-10.269 15.81-25.179 38.769-25.179 38.769-3.049 4.697-4.822 10.3-4.822 16.318z" fill="#24c0ff"/><path d="m333.035 404.364c.004 0-29.816-45.918-50.35-77.538-.001.001-.002 170.174-.002 170.174 33.137 0 60-26.863 60-60 0-12.036-3.546-23.242-9.648-32.636z" fill="#28a6fa"/><path d="m312.683 437c0-12.036-1.773-23.242-4.824-32.636.002 0-14.908-45.917-25.175-77.537-20.537 31.62-50.357 77.537-50.357 77.537-6.097 9.394-9.644 20.6-9.644 32.636 0 33.137 26.863 60 60 60 16.569 0 30-26.863 30-60z" fill="#24c0ff"/></symbol>
+        <symbol id="statistics" viewBox="0 0 478 478"><title>statistics</title><g> <g> <path d="M119.5,187.75H17.1c-9.4,0-17,7.6-17.1,17.1v256c0,9.5,7.7,17.1,17.1,17.1h102.4c9.5,0,17.1-7.7,17.1-17.1v-256 C136.6,195.35,128.9,187.75,119.5,187.75z"/> </g> </g><g> <g> <path d="M290.2,0.05H187.8c-9.4,0-17.1,7.6-17.1,17v443.8c0,9.5,7.7,17.1,17.1,17.1h102.4c9.5,0,17.1-7.7,17.1-17.1V17.15 C307.3,7.65,299.6,0.05,290.2,0.05z"/> </g> </g><g> <g> <path d="M460.9,136.55H358.5c-9.5,0-17.1,7.6-17.1,17.1v307.2c0,9.5,7.7,17.1,17.1,17.1h102.4c9.5,0,17.1-7.7,17.1-17.1v-307.2 C478,144.15,470.3,136.55,460.9,136.55z"/> </g> </g></symbol>
+        <symbol id="calendar-with-spring-binder-and-date-blocks" viewBox="0 0 511.634 511.634"><title>calendar-with-spring-binder-and-date-blocks</title><path d="M482.513,83.942c-7.225-7.233-15.797-10.85-25.694-10.85h-36.541v-27.41c0-12.56-4.477-23.315-13.422-32.261 C397.906,4.475,387.157,0,374.591,0h-18.268c-12.565,0-23.318,4.475-32.264,13.422c-8.949,8.945-13.422,19.701-13.422,32.261v27.41 h-109.63v-27.41c0-12.56-4.475-23.315-13.422-32.261C178.64,4.475,167.886,0,155.321,0H137.05 c-12.562,0-23.317,4.475-32.264,13.422c-8.945,8.945-13.421,19.701-13.421,32.261v27.41H54.823c-9.9,0-18.464,3.617-25.697,10.85 c-7.233,7.232-10.85,15.8-10.85,25.697v365.453c0,9.89,3.617,18.456,10.85,25.693c7.232,7.231,15.796,10.849,25.697,10.849h401.989 c9.897,0,18.47-3.617,25.694-10.849c7.234-7.234,10.852-15.804,10.852-25.693V109.639 C493.357,99.739,489.743,91.175,482.513,83.942z M137.047,475.088H54.823v-82.23h82.224V475.088z M137.047,374.59H54.823v-91.358 h82.224V374.59z M137.047,264.951H54.823v-82.223h82.224V264.951z M130.627,134.333c-1.809-1.809-2.712-3.946-2.712-6.423V45.686 c0-2.474,0.903-4.617,2.712-6.423c1.809-1.809,3.946-2.712,6.423-2.712h18.271c2.474,0,4.617,0.903,6.423,2.712 c1.809,1.807,2.714,3.949,2.714,6.423v82.224c0,2.478-0.909,4.615-2.714,6.423c-1.807,1.809-3.946,2.712-6.423,2.712H137.05 C134.576,137.046,132.436,136.142,130.627,134.333z M246.683,475.088h-91.365v-82.23h91.365V475.088z M246.683,374.59h-91.365 v-91.358h91.365V374.59z M246.683,264.951h-91.365v-82.223h91.365V264.951z M356.323,475.088h-91.364v-82.23h91.364V475.088z M356.323,374.59h-91.364v-91.358h91.364V374.59z M356.323,264.951h-91.364v-82.223h91.364V264.951z M349.896,134.333 c-1.807-1.809-2.707-3.946-2.707-6.423V45.686c0-2.474,0.9-4.617,2.707-6.423c1.808-1.809,3.949-2.712,6.427-2.712h18.268 c2.478,0,4.617,0.903,6.427,2.712c1.808,1.807,2.707,3.949,2.707,6.423v82.224c0,2.478-0.903,4.615-2.707,6.423 c-1.807,1.809-3.949,2.712-6.427,2.712h-18.268C353.846,137.046,351.697,136.142,349.896,134.333z M456.812,475.088h-82.228v-82.23 h82.228V475.088z M456.812,374.59h-82.228v-91.358h82.228V374.59z M456.812,264.951h-82.228v-82.223h82.228V264.951z"/></symbol>
+        <symbol id="home" viewBox="0 0 460.298 460.297"><title>home</title><path d="M230.149,120.939L65.986,256.274c0,0.191-0.048,0.472-0.144,0.855c-0.094,0.38-0.144,0.656-0.144,0.852v137.041 c0,4.948,1.809,9.236,5.426,12.847c3.616,3.613,7.898,5.431,12.847,5.431h109.63V303.664h73.097v109.64h109.629 c4.948,0,9.236-1.814,12.847-5.435c3.617-3.607,5.432-7.898,5.432-12.847V257.981c0-0.76-0.104-1.334-0.288-1.707L230.149,120.939 z"/><path d="M457.122,225.438L394.6,173.476V56.989c0-2.663-0.856-4.853-2.574-6.567c-1.704-1.712-3.894-2.568-6.563-2.568h-54.816 c-2.666,0-4.855,0.856-6.57,2.568c-1.711,1.714-2.566,3.905-2.566,6.567v55.673l-69.662-58.245 c-6.084-4.949-13.318-7.423-21.694-7.423c-8.375,0-15.608,2.474-21.698,7.423L3.172,225.438c-1.903,1.52-2.946,3.566-3.14,6.136 c-0.193,2.568,0.472,4.811,1.997,6.713l17.701,21.128c1.525,1.712,3.521,2.759,5.996,3.142c2.285,0.192,4.57-0.476,6.855-1.998 L230.149,95.817l197.57,164.741c1.526,1.328,3.521,1.991,5.996,1.991h0.858c2.471-0.376,4.463-1.43,5.996-3.138l17.703-21.125 c1.522-1.906,2.189-4.145,1.991-6.716C460.068,229.007,459.021,226.961,457.122,225.438z"/></symbol>
+        <symbol id="bar-graph-on-a-rectangle" viewBox="0 0 548.176 548.176"><title>bar-graph-on-a-rectangle</title><path d="M534.75,68.238c-8.945-8.945-19.694-13.417-32.261-13.417H45.681c-12.562,0-23.313,4.471-32.264,13.417 C4.471,77.185,0,87.936,0,100.499v347.173c0,12.566,4.471,23.318,13.417,32.264c8.951,8.946,19.702,13.419,32.264,13.419h456.815 c12.56,0,23.312-4.473,32.258-13.419c8.945-8.945,13.422-19.697,13.422-32.264V100.499 C548.176,87.936,543.699,77.185,534.75,68.238z M511.627,447.672c0,2.478-0.903,4.62-2.711,6.427 c-1.81,1.807-3.952,2.71-6.427,2.71H45.681c-2.473,0-4.615-0.903-6.423-2.71c-1.807-1.813-2.712-3.949-2.712-6.427V100.499 c0-2.474,0.902-4.611,2.712-6.423c1.809-1.804,3.951-2.708,6.423-2.708h456.815c2.471,0,4.613,0.902,6.42,2.708 c1.808,1.812,2.711,3.949,2.711,6.423V447.672L511.627,447.672z"/><rect x="73.092" y="310.635" width="73.089" height="109.632"/><rect x="182.728" y="164.452" width="73.085" height="255.814"/><rect x="292.362" y="237.541" width="73.083" height="182.726"/><rect x="401.994" y="127.907" width="73.091" height="292.36"/></symbol>
+        <symbol id="settings" viewBox="0 0 24 24"><title>settings</title><path d="m22.683 9.394-1.88-.239c-.155-.477-.346-.937-.569-1.374l1.161-1.495c.47-.605.415-1.459-.122-1.979l-1.575-1.575c-.525-.542-1.379-.596-1.985-.127l-1.493 1.161c-.437-.223-.897-.414-1.375-.569l-.239-1.877c-.09-.753-.729-1.32-1.486-1.32h-2.24c-.757 0-1.396.567-1.486 1.317l-.239 1.88c-.478.155-.938.345-1.375.569l-1.494-1.161c-.604-.469-1.458-.415-1.979.122l-1.575 1.574c-.542.526-.597 1.38-.127 1.986l1.161 1.494c-.224.437-.414.897-.569 1.374l-1.877.239c-.753.09-1.32.729-1.32 1.486v2.24c0 .757.567 1.396 1.317 1.486l1.88.239c.155.477.346.937.569 1.374l-1.161 1.495c-.47.605-.415 1.459.122 1.979l1.575 1.575c.526.541 1.379.595 1.985.126l1.494-1.161c.437.224.897.415 1.374.569l.239 1.876c.09.755.729 1.322 1.486 1.322h2.24c.757 0 1.396-.567 1.486-1.317l.239-1.88c.477-.155.937-.346 1.374-.569l1.495 1.161c.605.47 1.459.415 1.979-.122l1.575-1.575c.542-.526.597-1.379.127-1.985l-1.161-1.494c.224-.437.415-.897.569-1.374l1.876-.239c.753-.09 1.32-.729 1.32-1.486v-2.24c.001-.757-.566-1.396-1.316-1.486zm-10.683 7.606c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5-2.243 5-5 5z"/></symbol>
+        <symbol id="logout" viewBox="0 0 512 512"><title>logout</title><g> <g> <path d="M255.15,468.625H63.787c-11.737,0-21.262-9.526-21.262-21.262V64.638c0-11.737,9.526-21.262,21.262-21.262H255.15 c11.758,0,21.262-9.504,21.262-21.262S266.908,0.85,255.15,0.85H63.787C28.619,0.85,0,29.47,0,64.638v382.724 c0,35.168,28.619,63.787,63.787,63.787H255.15c11.758,0,21.262-9.504,21.262-21.262 C276.412,478.129,266.908,468.625,255.15,468.625z"/> </g> </g><g> <g> <path d="M505.664,240.861L376.388,113.286c-8.335-8.25-21.815-8.143-30.065,0.213s-8.165,21.815,0.213,30.065l92.385,91.173 H191.362c-11.758,0-21.262,9.504-21.262,21.262c0,11.758,9.504,21.263,21.262,21.263h247.559l-92.385,91.173 c-8.377,8.25-8.441,21.709-0.213,30.065c4.167,4.21,9.653,6.336,15.139,6.336c5.401,0,10.801-2.041,14.926-6.124l129.276-127.575 c4.04-3.997,6.336-9.441,6.336-15.139C512,250.302,509.725,244.88,505.664,240.861z"/> </g> </g></symbol>
+        <symbol id="search" viewBox="0 0 511.999 511.999"><title>search</title><path d="M508.874,478.708L360.142,329.976c28.21-34.827,45.191-79.103,45.191-127.309c0-111.75-90.917-202.667-202.667-202.667 S0,90.917,0,202.667s90.917,202.667,202.667,202.667c48.206,0,92.482-16.982,127.309-45.191l148.732,148.732 c4.167,4.165,10.919,4.165,15.086,0l15.081-15.082C513.04,489.627,513.04,482.873,508.874,478.708z M202.667,362.667 c-88.229,0-160-71.771-160-160s71.771-160,160-160s160,71.771,160,160S290.896,362.667,202.667,362.667z"/></symbol>
+    </svg>
+    
+    <script src="js/main.js" type="module"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</body>
+</html>

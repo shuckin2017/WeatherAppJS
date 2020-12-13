@@ -1,0 +1,149 @@
+.main-weather {
+  font-family: $fontfamily;
+  width: 80%;
+  @media only screen and (max-width: $tablet-w) {
+    display: none;
+  }
+  // .main-weather__header
+
+  &__header {
+  }
+
+  // .main-weather__content
+
+  &__content {
+  }
+}
+.weather-header {
+
+  // .weather-header__search
+
+  &__search {
+  }
+
+  // .weather-header__input
+
+  &__input {
+    height: 40px;
+    width: 80%;
+    padding: 10px 0;
+    border-radius: 0;
+    border-bottom: 1px solid $grey-color;
+    transition: $transition;
+    &::placeholder{
+      color: $grey-color;
+    }
+    &:focus {
+      color: $secondary-color;
+      border-bottom: 1px solid $green-color;
+    }
+    
+  }
+
+  // .weather-header__btn
+  &__form{
+    display: flex;
+    align-items: center;
+  }
+  &__btn {
+    border-radius: 8px;
+    padding: 8px 13px;
+    background-color: lighten($grey-color, 10%);
+    color: $green-color;
+    margin-right: 10px;
+    outline: none;
+  }
+  & .svg-search {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+
+.weather-content {
+
+  // .weather-content__title
+
+  &__title {
+    color: $secondary-color;
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+}
+
+.weather-content {
+
+  // .weather-content__city
+
+  &__city {
+  }
+}
+
+.city-block {
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  // .city-block__inner
+
+  &__inner {
+  }
+
+  // .city-block__list
+
+  &__list {
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  // .city-block__item
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin-right: 10px;
+    width: 90px;
+    border-radius: 20px;
+    border: 1px solid darken($bg-main-color, 5%);
+    background-color: $bg-main-color;
+  }
+
+  // .city-block__icon
+
+  &__icon {
+    margin-bottom: 10px;
+    & .svg-weather{
+      width: 35px;
+      height: 35px;
+    }
+  }
+
+  // .city-block__temp
+
+  &__temp {
+    color: $secondary-color;
+    font-size: 1.2rem;
+  }
+
+  // .city-block__day
+
+  &__day {
+    color: $grey-color;
+    font-size: .9rem;
+  }
+}
+
+.graph-block {
+  margin-top: 30px;
+  height: 280px;
+  background-color: $bg-main-color;
+  border-radius: 10px;
+
+  // .graph-block__inner
+
+  &__inner {
+  }
+}
